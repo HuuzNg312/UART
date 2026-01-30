@@ -1,0 +1,2 @@
+Check if data is available to read: if (mySerial.available()). 
+mySerial.readStringUntil('\n') sẽ đọc toàn bộ chuỗi ký tự cho đến khi gặp ký tự xuống dòng (được tạo ra bởi lệnh println từ phía Sender).

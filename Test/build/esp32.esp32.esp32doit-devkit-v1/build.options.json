@@ -1,0 +1,10 @@
+{
+  "additionalFiles": "",
+  "builtInLibrariesFolders": "C:\\Users\\Admin\\AppData\\Local\\Arduino15\\libraries",
+  "compiler.optimization_flags": "-Os",
+  "customBuildProperties": "",
+  "fqbn": "esp32:esp32:esp32doit-devkit-v1:UploadSpeed=921600,FlashFreq=80,DebugLevel=none,EraseFlash=none",
+  "hardwareFolders": "c:\\Users\\Admin\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "c:\\Users\\Admin\\Documents\\Arduino\\libraries",
+  "sketchLocation": "E:\\UART\\Test"
+}

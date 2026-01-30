@@ -1,0 +1,11 @@
+Định nghĩa chân(Pins):
+	TXD1 19: Chân truyền dữ liệu (Transmit)
+	RXD1 31: Chân nhận dữ liệu (Receive)
+HardwareSerial mySerial(1): tạo ra một đối tượng Serial mới (Serial 1) để không bị trùng với cổng Serial mặc định (Serial 0 - dùng để nạp code và debug trên máy tính).
+
+We create a variable to hold the number we want to send to the other board called counter
+	int counter = 0;
+
+mySerial.println(String(counter)): Gửi giá trị của biến đếm ra chân TXD1 19.
+
+counter++: tăng biến đếm lên sau mỗi loop

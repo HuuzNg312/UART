@@ -1,0 +1,22 @@
+Biến toàn cục:  String receivedMessage = "";
+
+---------Thiết lập ban đầu (Setup)-----------
+
+Serial.begin(115200); : Mở cổng UART, tốc độ nói chuyện là 115200 bit/giây
+Serial.println("ESP32 is ready. Please enter a message:"); : Thông báo ra màn hình là sẵn sàng
+
+--------------Chương trình chính-------------
+Serial.available(): Hàm này hỏi: "Trong buffer có hàng gửi đến không?".
+--> while (Serial.available()): "Chừng nào còn hàng trong kho thì cứ làm những việc dưới đây liên tục".
+
+char incomingChar = Serial.read();
+	Serial.read() : đọc từng kí tự
+
+Làm sao để biết là đã kết thúc?
+	if(incomingChar == '\n') { 
+		'\n': Đây là ký tự đặc biệt đại diện cho phím ENTER (Newline).
+		--> nếu xong rồi thì in ra:
+				Serial.print("You sent: ");
+       				Serial.println(receivedMessage);
+			sau khi in xong thì receivedMessage = ""; để dọn dẹp
+	else{ tiếp tục làm!! receivedMessage += incomingChar;}
